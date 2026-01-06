@@ -6,7 +6,9 @@ import AdminLayout from './cms/components/AdminLayout';
 import Dashboard from './cms/pages/Dashboard';
 import ContentEditor from './cms/pages/ContentEditor';
 import Login from './cms/pages/Login';
+import ContactSubmissions from './cms/pages/ContactSubmissions';
 import ProtectedRoute from './cms/components/ProtectedRoute';
+import ContactFormPage from './ContactFormPage';
 import './cms/cms.css';
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
+          <Route path="/contact-form" element={<ContactFormPage />} />
           <Route path="/admin/login" element={<Login />} />
 
           {/* Protected CMS Routes */}
@@ -37,6 +40,7 @@ function App() {
           >
             <Route index element={<Dashboard />} />
             <Route path="content" element={<ContentEditor />} />
+            <Route path="contacts" element={<ContactSubmissions />} />
             <Route path="settings" element={<div>Settings coming soon...</div>} />
           </Route>
 

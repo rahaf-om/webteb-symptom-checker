@@ -9,6 +9,7 @@ const initialContent = {
         { label: "Home", href: "#hero" },
         { label: "Impact", href: "#stats" },
         { label: "Solutions", href: "#benefits" },
+        { label: "Contact Us", href: "#contact" },
       ],
       cta: "Request Demo"
     },
@@ -47,6 +48,12 @@ const initialContent = {
         { num: "3", title: "Conversion", desc: "Patient is directed to book an appointment with YOUR specialists." }
       ]
     },
+    contactSection: {
+      heading: "Ready to Transform Your Business?",
+      subheading: "Join leading healthcare providers using WebTeb's advanced symptom checker. Enhance patient care and streamline triage today.",
+      primaryBtn: "Schedule a Demo",
+      secondaryLink: "Learn more about our solutions"
+    },
     footer: {
       about_title: "WebTeb for Business",
       about_desc: "We provide digital health infrastructure for leading hospitals in MENA.",
@@ -62,6 +69,7 @@ const initialContent = {
         { label: "الرئيسية", href: "#hero" },
         { label: "الأثر", href: "#stats" },
         { label: "الحلول", href: "#benefits" },
+        { label: "اتصل بنا", href: "#contact" },
       ],
       cta: "اطلب تجربة"
     },
@@ -99,6 +107,12 @@ const initialContent = {
         { num: "٢", title: "تحليل الذكاء الاصطناعي", desc: "يحلل المحرك المدخلات مقابل أكثر من ٢٥٠٠ سؤال تشخيصي." },
         { num: "٣", title: "تحويل المريض", desc: "يتم توجيه المريض لحجز موعد مع أطبائك المختصين." }
       ]
+    },
+    contactSection: {
+      heading: "مستعد لتحويل أعمالك؟",
+      subheading: "انضم إلى كبار مزودي الرعاية الصحية الذين يستخدمون مشخص الأعراض المتقدم من ويب طب. عزز رعاية المرضى وقم بتبسيط عملية الفرز اليوم.",
+      primaryBtn: "حدد موعداً للعرض",
+      secondaryLink: "تعرف أكثر على حلولنا"
     },
     footer: {
       about_title: "ويب طب للأعمال",

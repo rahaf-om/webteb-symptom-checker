@@ -142,3 +142,128 @@
         transform: translateY(0);
     }
 }
+
+/* Contact Submissions Premium Styles */
+.stat-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(229, 231, 235, 0.5);
+    background: #ffffff;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.08);
+    border-color: rgba(22, 119, 255, 0.2);
+}
+
+.stat-card .ant-statistic-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.stat-card .ant-statistic-content-value {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 28px;
+}
+
+.submissions-table .ant-table-thead>tr>th {
+    background: #f8fafc;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.submissions-table .ant-table-tbody>tr>td {
+    padding: 20px 24px;
+    color: #334155;
+}
+
+.submissions-table .ant-table-row {
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.submissions-table .ant-table-row:hover {
+    background-color: #f8fafc !important;
+}
+
+.filter-active {
+    background-color: #e6f4ff;
+    color: #1677ff;
+    border-color: #91caff;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.premium-gradient {
+    background: linear-gradient(135deg, #1677ff 0%, #00b96b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.metric-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover .metric-icon-wrapper {
+    transform: scale(1.1);
+}
+
+/* Status Tag Enhancement */
+.status-tag {
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-weight: 600;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.02em;
+}
+
+.status-tag-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+/* Custom Scrollbar for Table */
+.ant-table-body::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+    background: transparent;
+}

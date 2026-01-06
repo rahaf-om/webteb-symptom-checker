@@ -8,6 +8,8 @@ import B2BHowItWorks from './components/B2B/B2BHowItWorks'
 import B2BFooter from './components/B2B/B2BFooter'
 import './styles.css'
 
+import ContactSection from './components/ContactSection'
+
 function LandingPage() {
     const [lang, setLang] = useState(localStorage.getItem('language') || 'en')
     const { content: cmsContent } = useContent()
@@ -50,6 +52,7 @@ function LandingPage() {
             <B2BStats t={t.stats} />
             <B2BBenefits t={t.benefits} />
             <B2BHowItWorks t={t.how} />
+            <ContactSection t={t.contactSection} />
             <B2BFooter t={t.footer} />
         </div>
     )

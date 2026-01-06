@@ -1,0 +1,110 @@
+/* src/components/ContactSection.css */
+.contact-section {
+    padding: 80px 20px;
+    /* Premium gradient background */
+    background: linear-gradient(135deg, var(--primary, #007bff) 0%, var(--primary-dark, #0056b3) 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle pattern overlay or shine effect can go here if needed */
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.contact-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-primary-btn {
+    background-color: #ffffff;
+    color: var(--primary-dark, #0056b3);
+    border: none;
+    padding: 16px 40px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f8f9fa;
+}
+
+.contact-primary-btn:active {
+    transform: translateY(-1px);
+}
+
+.contact-secondary-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease, opacity 0.2s ease;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.contact-secondary-link:hover {
+    color: #ffffff;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tablet and Desktop adjustments */
+@media (min-width: 768px) {
+    .contact-section {
+        padding: 120px 40px;
+    }
+
+    .contact-heading {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-subheading {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-actions {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

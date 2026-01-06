@@ -42,6 +42,11 @@ const AdminLayout = () => {
             label: 'Settings',
         },
         {
+            key: '/admin/cms/contacts',
+            icon: <FileTextOutlined />,
+            label: 'Contact Submissions',
+        },
+        {
             key: '/',
             icon: <GlobalOutlined />,
             label: 'Visit Website',

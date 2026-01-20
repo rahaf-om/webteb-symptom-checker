@@ -5,6 +5,7 @@ import B2BHero from './components/B2B/B2BHero'
 import B2BStats from './components/B2B/B2BStats'
 import B2BBenefits from './components/B2B/B2BBenefits'
 import B2BHowItWorks from './components/B2B/B2BHowItWorks'
+import B2BFaq from './components/B2B/B2BFaq'
 import B2BFooter from './components/B2B/B2BFooter'
 import './styles.css'
 
@@ -52,6 +53,7 @@ function LandingPage() {
             <B2BStats t={t.stats} />
             <B2BBenefits t={t.benefits} />
             <B2BHowItWorks t={t.how} />
+            <B2BFaq t={t.faq} />
             <ContactSection t={t.contactSection} />
             <B2BFooter t={t.footer} />
         </div>
@@ -59,3 +61,4 @@ function LandingPage() {
 }
 
 export default LandingPage
+

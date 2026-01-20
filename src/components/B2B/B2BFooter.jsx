@@ -3,7 +3,7 @@ import React from 'react';
 const B2BFooter = ({ t }) => {
     if (!t) return null;
     return (
-        <footer id="contact" className="footer">
+        <footer className="footer">
             <div className="container">
                 <div className="footer-content reveal">
                     <div className="footer-section">
